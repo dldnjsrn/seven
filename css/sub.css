@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     background: var(--main-color);
-    height: 15.1rem;
+    height: 10rem;
 }
 
 #header h1 {
@@ -239,7 +239,6 @@ footer {
     height: 20.24vw;
     color: white;
     padding: 4.48vw 0;
-    font-family: Arial, sans-serif;
 }
 
 .footer-container {

@@ -560,6 +560,10 @@
     justify-content: center;
 }
 
+.search .inner {
+    margin: 0 0 0 0;
+}
+
 .search-title {
     text-align: left;
 }
@@ -907,7 +911,6 @@ footer {
     height: 22.24vw;
     color: white;
     padding: 4.48vw 0;
-    font-family: Arial, sans-serif;
 }
 
 .footer-container {
