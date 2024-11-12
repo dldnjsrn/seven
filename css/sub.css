@@ -499,7 +499,7 @@ footer {
 @media screen and (max-width: 400px) {
     .inner {
         max-width: 39rem;
-        min-width: 97.5%;
+        max-width: 97.5%;
     }
 
     #header {

@@ -11,21 +11,9 @@
     --dark50: #555555;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .inner {
     max-width: 68.75%;
     margin: 0 auto;
-}
-
-ol,
-ul,
-li {
-    list-style: none;
 }
 
 body {

@@ -1,0 +1,3 @@
+$(function () {
+    gsap.registerPlugin(ScrollTrigger);
+});
