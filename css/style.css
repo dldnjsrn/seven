@@ -1030,6 +1030,7 @@ footer {
 
     #header {
         gap: 67.5rem;
+        gap: 65.918%;
     }
 
     #header nav {
@@ -1065,6 +1066,7 @@ footer {
 
     .hero h2 {
         margin-top: 27.2rem;
+        margin-top: 28.8136%;
         font-size: 7.9rem;
     }
     .hero p {
@@ -1073,7 +1075,9 @@ footer {
 
     .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
         top: 90rem;
+        top: 89.8906%;
         width: 90.5rem;
+        width: 87.8906%;
         left: 4rem;
     }
 
@@ -1081,14 +1085,18 @@ footer {
         left: 5%;
         bottom: 4.5rem;
         width: 88rem;
+        width: 85.9375%;
     }
 
     .sp-event {
         width: 36.6rem;
+        width: 35.7422%;
         height: 6rem;
         font-size: 2.7rem;
         left: 32.8rem;
+        left: 32.0313%;
         top: 77.2rem;
+        top: 75.3906%;
     }
 
     .swiper-button-prev {
@@ -1115,10 +1123,12 @@ footer {
 
     .products {
         padding-top: 17.4rem;
+        padding-top: 16.9922%;
     }
 
     .nav-tabs .nav-item {
         width: 21.9rem;
+        width: 23.1992%;
         height: 5.8rem;
         border-radius: 50px;
         display: flex;
@@ -1131,6 +1141,7 @@ footer {
     }
     .products-row {
         gap: 20rem;
+        gap: 19.5313%;
     }
 
     .product-item {
@@ -1140,7 +1151,9 @@ footer {
 
     .more-btn {
         margin-top: 13.3rem;
+        margin-top: 14.089%;
         width: 19.6rem;
+        width: 20.7627%;
         height: 5.3rem;
         font-size: 2.4rem;
     }
@@ -1153,11 +1166,12 @@ footer {
     }
 
     .brand-story {
-        width: 92.4rem;
+        /* width: 92.4rem; */
+        width: 100%;
     }
 
     .brand-img {
-        width: 107%;
+        width: 100%;
         height: 35rem;
         background: url(../img/brand-store-tb.jpg) no-repeat center center;
         background-size: cover;
@@ -1173,7 +1187,9 @@ footer {
 
     .moer-arrow {
         top: 26rem;
+        top: 77.5424%;
         width: 11rem;
+        width: 10.7422%;
         height: 0.3rem;
     }
 
@@ -1186,17 +1202,15 @@ footer {
 
     .brand-img:hover .moer-arrow {
         width: 21rem;
-    }
-
-    .event {
-        margin-left: -120rem;
+        width: 20.5078%;
     }
 
     .event h3 {
         font-size: 5.5rem;
         margin-top: 17.2rem;
+        margin-top: 16.7969%;
         margin-bottom: 4rem;
-        margin-left: 120rem;
+        /* margin-left: 120rem; */
     }
 
     .event-con img {
@@ -1208,17 +1222,20 @@ footer {
     .event-con dl dt {
         font-size: 3.8rem;
         top: 11rem;
+        top: 20.415%;
     }
     .event-con dl dd {
         font-size: 1.8rem;
         top: 25rem;
+        top: 70.034%;
     }
 
     .make {
-        width: 102.4rem;
+        /* width: 102.4rem; */
+        width: 100%;
         height: 33.4rem;
         border-radius: 0;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .make-sec {
@@ -1234,6 +1251,7 @@ footer {
 
     .mak-btn {
         width: 17.6rem;
+        width: 28.6441%;
         height: 5.3rem;
         font-size: 2.5rem;
     }
@@ -1258,6 +1276,7 @@ footer {
 
     .search-right {
         width: 40.7rem;
+        width: 43.1144%;
         height: 59.1rem;
         position: absolute;
         margin-top: -1rem;
@@ -1276,21 +1295,25 @@ footer {
         background-size: cover;
         background-position: center;
         width: 26.7rem;
+        width: 60.5442%;
         height: 34.5rem;
     }
 
     .search-results h3 {
         font-size: 2.2rem;
         top: 35rem;
+        top: 100%;
     }
     .search-results p {
         font-size: 2.2rem;
-        top: 39rem;
+        top: 120%;
     }
 
     .search-box {
         margin-top: 74rem;
+        margin-top: 100%;
         width: 94rem;
+        width: 100%;
         margin-left: -4rem;
         display: flex;
     }
