@@ -280,11 +280,11 @@
 
 .num {
     position: absolute;
-    bottom: 28.5rem;
+    bottom: 26rem;
     left: 43%;
     display: flex;
     justify-content: space-between;
-    width: 27rem;
+    width: 24rem;
     font-size: 3rem;
     font-weight: 600;
     color: #fff;
