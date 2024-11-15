@@ -14,7 +14,7 @@ $(function () {
             defaults: { x: -200, opacity: 0, duration: 0.7 },
             scrollTrigger: {
                 trigger: boxes,
-                markers: true,
+                // markers: true,
                 start: "top 60%",
                 end: "bottom top",
             },
@@ -33,7 +33,7 @@ $(function () {
             defaults: { x: 200, opacity: 0, duration: 1 },
             scrollTrigger: {
                 trigger: boxes,
-                markers: true,
+                // markers: true,
                 start: "top 60%",
                 end: "bottom top",
             },

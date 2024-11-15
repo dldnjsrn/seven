@@ -496,6 +496,12 @@ footer {
     }
 }
 
+@media screen and (max-width: 950px) {
+    .main-logo img {
+        width: 20rem;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .inner {
         max-width: 39rem;

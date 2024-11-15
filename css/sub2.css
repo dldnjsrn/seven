@@ -156,6 +156,7 @@
     text-align: left;
     display: flex;
     width: 23rem;
+    width: 11vw;
     justify-content: space-between;
     margin-top: 2.8rem;
 }
@@ -195,8 +196,18 @@
     width: 23.1rem !important;
     width: 25.6667% !important;
     height: 23.1rem;
-    background: #000;
+    /* background: #000; */
     border-radius: 5rem;
+    text-align: left;
+}
+
+.products-swiper .swiper-slide h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.products-swiper .swiper-slide p {
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .button-prev {
@@ -222,8 +233,9 @@
 }
 
 .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
-    top: 27rem;
+    top: 30rem;
     left: 36.2rem;
+    left: 18.8542%;
     bottom: 0;
     height: 0.21vw;
     position: absolute;
@@ -261,6 +273,7 @@
     font-weight: 700;
     border: 1px solid #000;
     width: 14.7rem;
+    width: 14.7442%;
     height: 5rem;
     border-radius: 5rem;
 
@@ -306,9 +319,9 @@
 }
 
 .products-item {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     position: relative;
-    flex: 1 1 300px;
+    flex: 1 1 30rem;
     margin-top: 8.5rem;
     padding: 4rem 2rem;
 }
@@ -496,6 +509,29 @@ footer {
     background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 1250px) {
+    .row-item {
+        width: 95.7692%;
+    }
+
+    .sec-1 .inner {
+        gap: 18.7292%;
+    }
+
+    .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
+        height: 0.5rem;
+        width: 20rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .products-item:nth-child(9) {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .inner {
         max-width: 94.4rem;
@@ -550,6 +586,7 @@ footer {
         position: absolute;
         top: -4rem;
         left: 17rem;
+        left: 16.6016%;
     }
 
     .menu {
@@ -566,12 +603,13 @@ footer {
 
     .products-swiper .swiper-slide {
         width: 26rem !important;
+        width: 25.3906% !important;
         height: 26rem;
     }
 
     .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
         height: 0.6rem;
-        top: 29rem;
+        top: 32rem;
         width: 22rem;
     }
 
@@ -609,6 +647,7 @@ footer {
         font-size: 2.8rem;
         font-weight: 700;
         width: 15rem;
+        width: 15.8898%;
         margin: 1rem 0 0 0;
         flex-shrink: 0;
     }
@@ -688,6 +727,37 @@ footer {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .main-logo img {
+        width: 10rem;
+    }
+    .goods {
+        height: 26rem;
+    }
+
+    .goods p {
+        font-size: 1.5rem;
+        left: 2rem;
+        top: 0;
+    }
+
+    .goods dl dt {
+        font-size: 4rem;
+        padding-top: 8rem;
+    }
+    .goods dl dd {
+        font-size: 1.7rem;
+    }
+
+    .products-swiper .swiper-slide {
+        width: 35.3906% !important;
+    }
+
+    .popularity-products {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .inner {
         max-width: 39rem;
@@ -715,35 +785,22 @@ footer {
     }
 
     .language-selector {
+        font-size: 2.8rem;
+    }
+
+    .language-selector {
         font-size: 3.8rem;
         display: none;
     }
 
     .main-logo img {
         width: 15rem;
+        width: 37.5%;
         /* width: 100%; */
     }
 
     #header h1 {
         margin-left: 22.11vw;
-    }
-
-    .goods {
-        height: 26rem;
-    }
-
-    .goods p {
-        font-size: 1.5rem;
-        left: 2rem;
-        top: 0;
-    }
-
-    .goods dl dt {
-        font-size: 4rem;
-        padding-top: 8rem;
-    }
-    .goods dl dd {
-        font-size: 1.7rem;
     }
 
     .sec-1 .inner {
@@ -754,11 +811,16 @@ footer {
 
     .products-swiper {
         width: 39rem;
+        width: 100%;
     }
 
     .products-swiper .swiper-slide {
         width: 29rem !important;
         height: 29rem;
+    }
+
+    .popularity-products {
+        width: 100%;
     }
 
     .button-prev,
@@ -768,12 +830,14 @@ footer {
 
     .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
         left: 11rem;
-        top: 31rem;
+        top: 33rem;
         width: 18rem;
+        display: none;
     }
 
     .top-menu {
         width: 39rem;
+        width: 100%;
     }
 
     .products-swiper2 .swiper-slide {
@@ -787,6 +851,7 @@ footer {
 
     .selector {
         width: 10rem;
+        width: 25.64102564102564%;
         height: 3rem;
         font-size: 1.4rem;
     }
@@ -815,6 +880,7 @@ footer {
 
     .row-item {
         width: 39rem;
+        width: 100%;
     }
 
     .prev-pg img {

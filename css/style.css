@@ -106,12 +106,12 @@
 }
 
 /* 히어로 섹션 */
-.hero {
-    background: url("../img/main.jpg") no-repeat 0 0 / contain;
+.hero-swiper .swiper-slide .hero {
+    background: no-repeat center center / cover;
     color: #fff;
     text-align: center;
     padding: 7.81vw 0 5.21vw;
-    height: 52.92vw;
+    height: 51.92vw;
     top: -7.81vw;
     position: relative;
     display: flex;
@@ -255,20 +255,17 @@
     display: none;
 }
 
-.hero-swiper .swiper-slide:nth-child(2) {
-    background-image: url("../img/slide2.jpg");
+.hero-swiper .swiper-slide:nth-child(1) .hero {
+    background-image: url("../img/main.jpg");
 }
-
-.hero-swiper .swiper-slide:nth-child(3) {
-    background-image: url("../img/slide3.jpg");
+.hero-swiper .swiper-slide:nth-child(2) .hero {
+    background-image: url("../img/main-img2.jpg");
 }
-
-.hero-swiper .swiper-slide:nth-child(4) {
-    background-image: url("../img/slide4.jpg");
+.hero-swiper .swiper-slide:nth-child(3) .hero {
+    background-image: url("../img/main-img3.jpg");
 }
-
-.hero-swiper .swiper-slide:nth-child(5) {
-    background-image: url("../img/slide5.jpg");
+.hero-swiper .swiper-slide:nth-child(4) .hero {
+    background-image: url("../img/main-img4.jpg");
 }
 
 .slide-number {
@@ -283,8 +280,8 @@
 
 .num {
     position: absolute;
-    bottom: 28.5rem;
-    left: 43%;
+    bottom: 26.5rem;
+    left: 42%;
     display: flex;
     justify-content: space-between;
     width: 27rem;
@@ -581,7 +578,7 @@
 }
 
 .search-box {
-    margin-top: 8.33vw;
+    margin-top: 14.33vw;
     font-weight: 500;
     font-size: 1.3vw;
     position: relative;
@@ -1022,12 +1019,8 @@ footer {
 }
 
 /* 태블릿 */
-@media screen and (max-width: 1024px) {
-    .inner {
-        max-width: 94.4rem;
-        max-width: 92.1875%;
-    }
 
+@media screen and (max-width: 1300px) {
     #header {
         gap: 67.5rem;
         gap: 65.918%;
@@ -1054,20 +1047,18 @@ footer {
         width: 21.1rem;
     }
 
-    .hero-swiper {
-        /* background: url(../img/main.jpg) no-repeat 50% 50% / cover; */
-        height: 100.5rem;
+    .hero-swiper .swiper-wrapper .swiper-slide {
+        height: 60.92vw;
     }
 
-    .hero {
-        height: 100.5rem;
-        background: url(../img/main.jpg) no-repeat 50% 50% / cover;
+    .hero-swiper .swiper-slide .hero {
+        height: 90rem;
     }
 
     .hero h2 {
         margin-top: 27.2rem;
         margin-top: 28.8136%;
-        font-size: 7.9rem;
+        font-size: 7rem;
     }
     .hero p {
         font-size: 3.1rem;
@@ -1083,7 +1074,7 @@ footer {
 
     .num {
         left: 5%;
-        bottom: 4.5rem;
+        bottom: 3rem;
         width: 88rem;
         width: 85.9375%;
     }
@@ -1119,6 +1110,61 @@ footer {
         height: 4rem;
         top: 87%;
         left: 6%;
+    }
+
+    .swiper-section3 {
+        height: 100rem;
+        overflow: hidden;
+    }
+    .swiper-section3 h2 {
+        margin-top: 10rem;
+        font-size: 5.1rem;
+    }
+    .swiper-section3 h2 strong {
+        font-size: 5.8rem;
+    }
+
+    .mySwiper3 .swiper-slide {
+        width: 43.9rem;
+
+        border-radius: 5rem;
+        margin-top: 8rem;
+    }
+
+    .news-item dl dt {
+        font-size: 2rem;
+    }
+    .news-item dl dd {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .hashtags span {
+        width: 12.4rem;
+        width: 28.246%;
+        height: 3.2rem;
+        border-radius: 5rem;
+        font-size: 1.4rem;
+        padding: 0.6rem;
+        margin-top: 2rem;
+    }
+
+    .nav-tabs {
+        margin-top: 5.4vw;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .inner {
+        max-width: 94.4rem;
+        max-width: 92.1875%;
+    }
+
+    .hero-swiper .swiper-wrapper .swiper-slide {
+        height: 77.92vw;
+    }
+
+    .hero {
+        height: 100.5rem;
     }
 
     .products {
@@ -1332,6 +1378,7 @@ footer {
     .search-box::after {
         height: 0.3rem;
         width: 82rem;
+        width: 116%;
     }
 
     .search-tags {
@@ -1342,6 +1389,7 @@ footer {
 
     .tag {
         width: 17rem;
+        /* width: 25.7967%; */
         height: 6.4rem;
         font-size: 2.4rem;
     }
@@ -1353,8 +1401,13 @@ footer {
         gap: 0;
     }
 
+    .NMIXX a {
+        width: 100%;
+    }
+
     .NMIXX-sec {
         width: 102.4rem;
+        width: 100%;
         height: 42rem;
         border-radius: 0;
         overflow: hidden;
@@ -1362,6 +1415,7 @@ footer {
 
     .NMIXX-sec-2 {
         width: 102.4rem;
+        width: 100%;
         height: 42rem;
         border-radius: 0;
     }
@@ -1380,6 +1434,7 @@ footer {
         background-size: cover;
         background-position: center;
         width: 50.7rem;
+        width: 49.5117%;
         height: 33.5rem;
         top: 8.5rem;
         left: 57rem;
@@ -1387,8 +1442,10 @@ footer {
 
     .NMIXX-arrow {
         width: 10rem;
+        width: 9.7656%;
         height: 0.3rem;
         top: 33rem;
+
         left: 3.5rem;
     }
     .NMIXX-arrow::after {
@@ -1413,6 +1470,7 @@ footer {
         background-size: cover;
         background-position: center;
         width: 50.7rem;
+        width: 49.5117%;
         height: 33.5rem;
         top: 8.6rem;
         left: 57rem;
@@ -1420,6 +1478,7 @@ footer {
 
     .NMIXX-arrow-2 {
         width: 10rem;
+        width: 9.7656%;
         height: 0.3rem;
         top: 33rem;
         left: 3.5rem;
@@ -1430,56 +1489,27 @@ footer {
         background: url(../img/brand-sotry.svg) no-repeat 50% 110% / 120% auto;
     }
 
-    .swiper-section3 {
-        height: 100rem;
-        overflow: hidden;
-    }
-    .swiper-section3 h2 {
-        margin-top: 10rem;
-        font-size: 5.1rem;
-    }
-    .swiper-section3 h2 strong {
-        font-size: 5.8rem;
-    }
-
-    .mySwiper3 .swiper-slide {
-        width: 43.9rem;
-        border-radius: 5rem;
-        margin-top: 8rem;
-    }
-
-    .news-item dl dt {
-        font-size: 2rem;
-    }
-    .news-item dl dd {
-        font-size: 1.5rem;
-        margin-top: 2rem;
-    }
-
-    .hashtags span {
-        width: 12.4rem;
-        height: 3.2rem;
-        border-radius: 5rem;
-        font-size: 1.4rem;
-        padding: 0.6rem;
-        margin-top: 2rem;
-    }
-
     footer {
-        height: 32.8rem;
+        height: 26.8rem;
+        padding: 3.48vw 0;
     }
 
     .footer-logo {
         background-size: cover;
         background-position: center;
         width: 16.8rem;
+        width: 37.2506%;
         height: 2.9rem;
     }
 
-    .footer-address,
-    .footer-copyright {
+    .footer-address {
         font-size: 1.5rem;
         width: 45.1rem;
+        width: 84%;
+    }
+
+    .footer-copyright {
+        font-size: 1.5rem;
     }
 
     .sns {
@@ -1490,10 +1520,12 @@ footer {
         gap: 6rem;
 
         max-width: 93rem;
+        max-width: 90.8203%;
     }
 
     .footer-menu {
         width: 45.1rem;
+        width: 100%;
     }
 
     .menu-column h3 {
@@ -1509,44 +1541,23 @@ footer {
     }
 }
 
-@media screen and (max-width: 400px) {
-    .inner {
-        max-width: 39rem;
-    }
-
+@media screen and (max-width: 800px) {
     #header {
-        gap: 26rem;
-        left: 3rem;
-        margin-top: 5rem;
+        gap: 70.918%;
     }
 
-    #header nav {
-        display: none;
-    }
-
-    .header-right {
-        gap: 2.5rem;
-        margin: 0 12rem 0 -6rem;
-    }
-
-    .hamburger-menu {
-        scale: 5.8;
-    }
-
-    .language-selector {
-        font-size: 3.8rem;
-        display: none;
+    #header h1 {
+        margin-left: 11rem;
+        margin-left: 23.75%;
     }
 
     .main-logo img {
-        width: 15rem;
+        width: 10rem;
     }
 
-    .hero-swiper {
-        /* background: url(../img/main.jpg) no-repeat 50% 50% / cover; */
-        height: 85rem;
+    .language-selector {
+        font-size: 2rem;
     }
-
     .hero {
         height: 85rem;
         background: url(../img/main.jpg) no-repeat 50% 50% / cover;
@@ -1561,23 +1572,28 @@ footer {
     }
 
     .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
-        top: 75rem;
+        top: 55rem;
         width: 35.5rem;
+        width: 92.75%;
         left: 2rem;
     }
 
     .num {
         left: 5.5%;
-        bottom: 5.5rem;
+        bottom: 20rem;
+        bottom: 3.5%;
         width: 35rem;
+        width: 89.74358974358974%;
         font-size: 2.5rem;
     }
 
     .sp-event {
         width: 19.2rem;
+        width: 48%;
         height: 3.8rem;
         font-size: 2.7rem;
-        left: 9.8rem;
+        left: 19.8rem;
+        left: 24.75%;
         top: 42.2rem;
         font-size: 1.9rem;
         border-radius: 50px;
@@ -1594,8 +1610,8 @@ footer {
     .btn-stop {
         width: 3rem;
         height: 3rem;
-        top: 84%;
-        left: 10%;
+        top: 83%;
+        left: 6%;
     }
 
     .btn-stop.active {
@@ -1623,6 +1639,10 @@ footer {
     }
 
     .product-item {
+        margin-top: 18rem;
+    }
+
+    .product-item {
         scale: 3.4;
         left: 1rem;
     }
@@ -1637,12 +1657,181 @@ footer {
 
     .more-btn {
         width: 14.5rem;
+        width: 36.25%;
+        border-radius: 5rem;
         height: 4rem;
         font-size: 1.8rem;
+        margin-top: 12rem;
     }
+
+    .search-title h2 {
+        font-size: 3.5rem;
+        margin-top: 19rem;
+    }
+    .search-title p {
+        font-size: 2rem;
+    }
+
+    .search-right {
+        width: 20.2rem;
+        width: 50.5%;
+        height: 29.5rem;
+        margin-top: 20rem;
+    }
+
+    .search-results {
+        width: 13rem;
+        width: 64.3564%;
+        height: 17rem;
+        margin-top: -4rem;
+    }
+
+    .search-results .badge {
+        width: 4.3rem;
+        height: 2rem;
+        font-size: 1rem;
+        top: -2rem;
+    }
+
+    .search-results h3 {
+        font-size: 1.3rem;
+        top: 18rem;
+    }
+    .search-results P {
+        font-size: 1.3rem;
+        top: 22rem;
+    }
+
+    .search-box {
+        width: 40rem;
+        width: 100%;
+        margin-left: 2rem;
+        margin-top: 40rem;
+    }
+
+    .search-box::after {
+        width: 35rem;
+        width: 87.5%;
+    }
+
+    .search-box input {
+        font-size: 1.6rem;
+        width: 29rem;
+        width: 82.8571%;
+    }
+
+    .tag {
+        width: 11.5rem;
+        width: 32.85714285714286%;
+        height: 3.7rem;
+        font-size: 1.3rem;
+        border-radius: 5rem;
+        margin-top: 1rem;
+    }
+
+    .tag:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .search-right {
+        width: 30.5%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .nav-tabs {
+        margin-top: -3rem;
+    }
+
+    .hero-swiper .swiper-wrapper .swiper-slide {
+        height: 102.92vw;
+    }
+
+    .search-right {
+        width: 20.2rem;
+        width: 50.5%;
+        height: 29.5rem;
+        margin-top: 20rem;
+    }
+    .tag {
+        width: 22.857143%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .inner {
+        max-width: 39rem;
+        max-width: 97.5%;
+    }
+
+    #header {
+        gap: 26rem;
+        gap: 65%;
+        left: 3rem;
+        margin-top: 5rem;
+    }
+
+    #header nav {
+        display: none;
+    }
+
+    .header-right {
+        gap: 2.5rem;
+        margin: 0 12rem 0 -6rem;
+    }
+
+    .hamburger-menu {
+        scale: 5.8;
+    }
+
+    .language-selector {
+        font-size: 3.8rem;
+        display: none;
+    }
+
+    #header h1 {
+        margin-left: 9.11vw;
+    }
+
+    .main-logo img {
+        width: 15rem;
+    }
+
+    .hero-swiper {
+        /* background: url(../img/main.jpg) no-repeat 50% 50% / cover; */
+        height: 85rem;
+    }
+
+    .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
+        top: 75rem;
+    }
+
+    .sp-event {
+        width: 19.2rem;
+        width: 48%;
+        height: 3.8rem;
+        font-size: 2.7rem;
+        left: 9.8rem;
+        top: 42.2rem;
+        font-size: 1.9rem;
+        border-radius: 50px;
+    }
+
+    .btn-stop {
+        top: 85%;
+    }
+
+    .num {
+        bottom: 7%;
+    }
+
     .brand-story {
         width: 39rem;
+        width: 100%;
         margin-top: 10rem;
+        /* background: #ff0; */
     }
 
     .brand-img {
@@ -1673,7 +1862,11 @@ footer {
 
     .event-con {
         margin-bottom: 30rem;
-        margin-left: 13rem;
+        /* margin-left: 13rem; */
+    }
+
+    .mySwiper2 .swiper-wrapper .swiper-slide {
+        width: 36.3rem !important;
     }
 
     .event-con img {
@@ -1682,15 +1875,16 @@ footer {
 
     .event-con dl dt {
         font-size: 2rem;
-        margin-top: -4rem;
+        margin-top: 1rem;
     }
     .event-con dl dd {
         font-size: 1rem;
-        margin-top: -11rem;
+        margin-top: -1rem;
     }
 
     .make {
         width: 40rem;
+        width: 100%;
         height: 14.7rem;
     }
 
@@ -1707,73 +1901,11 @@ footer {
 
     .mak-btn {
         width: 10rem;
+        width: 34.0136%;
         height: 3.1rem;
         font-size: 1.4rem;
         border-radius: 5rem;
         margin-top: 2rem;
-    }
-
-    .search-title h2 {
-        font-size: 3.5rem;
-        margin-top: 19rem;
-    }
-    .search-title p {
-        font-size: 2rem;
-    }
-
-    .search-right {
-        width: 20.2rem;
-        height: 29.5rem;
-        margin-top: 20rem;
-    }
-
-    .search-results {
-        width: 13rem;
-        height: 17rem;
-        margin-top: -4rem;
-    }
-
-    .search-results .badge {
-        width: 4.3rem;
-        height: 2rem;
-        font-size: 1rem;
-        top: -2rem;
-    }
-
-    .search-results h3 {
-        font-size: 1.3rem;
-        top: 18rem;
-    }
-    .search-results P {
-        font-size: 1.3rem;
-        top: 22rem;
-    }
-
-    .search-box {
-        width: 40rem;
-        margin-left: 2rem;
-        margin-top: 40rem;
-    }
-
-    .search-box::after {
-        width: 35rem;
-    }
-
-    .search-box input {
-        font-size: 1.6rem;
-        width: 29rem;
-    }
-
-    .tag {
-        width: 11.5rem;
-        height: 3.7rem;
-        font-size: 1.3rem;
-        border-radius: 5rem;
-        margin-top: 1rem;
-    }
-
-    .tag:nth-child(4) {
-        display: none;
     }
 
     .NMIXX {
@@ -1782,6 +1914,7 @@ footer {
 
     .NMIXX-sec {
         width: 40rem;
+        width: 100%;
         height: 18rem;
     }
     .NMIXX-sec h4 {
@@ -1796,6 +1929,7 @@ footer {
 
     .NMIXX-img {
         width: 19.2rem;
+        width: 48%;
         height: 14rem;
         top: 4.5rem;
         left: 21rem;
@@ -1809,6 +1943,7 @@ footer {
 
     .NMIXX-sec-2 {
         width: 40rem;
+        width: 100%;
         height: 18rem;
     }
 
@@ -1826,6 +1961,7 @@ footer {
         top: 5rem;
         left: 18rem;
         width: 22.7rem;
+        width: 56.75%;
         height: 13rem;
     }
 
@@ -1863,13 +1999,15 @@ footer {
         height: 2.5rem;
         font-size: 1rem;
     }
-
     footer {
         height: 16.8rem;
+        margin-top: 5rem;
+        /* aspect-ratio: 1/0.42; */
     }
 
     .footer-container {
-        width: 39rem;
+        max-width: 39rem;
+        max-width: 97.5%;
         gap: 3rem;
         margin-top: 2rem;
     }
@@ -1887,10 +2025,12 @@ footer {
     .footer-copyright {
         font-size: 0.7rem;
         width: 21rem;
+        width: 70.7071%;
     }
 
     .footer-menu {
         width: 21rem;
+        width: 70.7071%;
     }
 
     .menu-column h3 {
