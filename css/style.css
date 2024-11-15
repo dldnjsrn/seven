@@ -1020,7 +1020,7 @@ footer {
 
 /* 태블릿 */
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
     #header {
         gap: 67.5rem;
         gap: 65.918%;
