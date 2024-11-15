@@ -3,15 +3,15 @@ $(function () {
 
     const titleTL = gsap.timeline();
 
-    titleTL.from(".haapy", { y: -200, durtaion: 0.7, autoAlpha: 0 });
-    titleTL.from(".haapy-title dt", { y: -200, autoAlpha: 0, durtaion: 0.7 });
-    titleTL.from(".haapy-title dd", { y: -200, autoAlpha: 0, durtaion: 0.7 });
+    titleTL.from(".haapy", { y: -200, durtaion: 0.4, autoAlpha: 0 });
+    titleTL.from(".haapy-title dt", { y: -200, autoAlpha: 0, durtaion: 0.4 });
+    titleTL.from(".haapy-title dd", { y: -200, autoAlpha: 0, durtaion: 0.4 });
 
     const leftBox = gsap.utils.toArray(".hs-sec1");
     console.log(leftBox);
     leftBox.forEach((boxes) => {
         const tl = gsap.timeline({
-            defaults: { x: -200, opacity: 0, duration: 0.7 },
+            defaults: { x: -200, opacity: 0, duration: 0.4 },
             scrollTrigger: {
                 trigger: boxes,
                 // markers: true,
@@ -30,7 +30,7 @@ $(function () {
     console.log(leftBox);
     rhttBox.forEach((boxes) => {
         const tl = gsap.timeline({
-            defaults: { x: 200, opacity: 0, duration: 1 },
+            defaults: { x: 200, opacity: 0, duration: 0.4 },
             scrollTrigger: {
                 trigger: boxes,
                 // markers: true,

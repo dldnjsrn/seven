@@ -4,8 +4,8 @@ $(function () {
     // start
     const navTL = gsap.timeline();
 
-    navTL.from("h1", { y: -200, durtaion: 0.4, autoAlpha: 0 });
-    navTL.from(".header-right", { y: -200, durtaion: 0.4, autoAlpha: 0, stagger: 0.2 }, "-=0.7");
+    navTL.from("h1", { y: -200, durtaion: 0.2, autoAlpha: 0 });
+    navTL.from(".header-right", { y: -200, durtaion: 0.2, autoAlpha: 0, stagger: 0.2 }, "-=0.7");
     navTL.from("nav ul li", { y: -200, durtaion: 0.4, autoAlpha: 0, stagger: 0.2 });
     navTL.from(".beran-story-sec dl dt", {
         delay: 0.5,
